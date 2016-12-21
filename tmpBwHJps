@@ -1,0 +1,385 @@
+Script started on mar 20 dic 2016 20:45:34 ECT
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap-PS 192.168.1.7
+bash: nmap-PS: no se encontró la orden
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap-PS 192.168.1.7[1@ 
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:45 ECT
+Nmap scan report for 192.168.1.7
+Host is up (0.056s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+3580/tcp open  nati-svrloc
+8080/tcp open  http-proxy
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 9.93 seconds
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -PA 192.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:46 ECT
+Nmap scan report for 192.168.1.7
+Host is up (0.11s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+3580/tcp open  nati-svrloc
+8080/tcp open  http-proxy
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 15.36 seconds
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nam[K[Kmap -PU 192.1688[K.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:47 ECT
+Nmap scan report for 192.168.1.7
+Host is up (0.074s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+3580/tcp open  nati-svrloc
+8080/tcp open  http-proxy
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 15.99 seconds
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmao[Kp -SN[K[Ksn -PY -v 192.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:48 ECT
+Initiating ARP Ping Scan at 20:48
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 20:48, 0.14s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:48
+Completed Parallel DNS resolution of 1 host. at 20:48, 0.00s elapsed
+Nmap scan report for 192.168.1.7
+Host is up (0.14s latency).
+MAC Address: 70:77:81:83:47:9F (Unknown)
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.19 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -PE -PP -PM www.google.com
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:49 ECT
+Nmap scan report for www.google.com (64.233.176.147)
+Host is up (0.13s latency).
+Other addresses for www.google.com (not scanned): 64.233.176.99 64.233.176.106 64.233.176.104 64.233.176.103 64.233.176.105
+rDNS record for 64.233.176.147: yw-in-f147.1e100.net
+Not shown: 998 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+
+Nmap done: 1 IP address (1 host up) scanned in 11.07 seconds
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -sn -PO www.gooo[Kgle.com
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:49 ECT
+Nmap scan report for www.google.com (64.233.176.99)
+Host is up (0.12s latency).
+Other addresses for www.google.com (not scanned): 64.233.176.106 64.233.176.104 64.233.176.103 64.233.176.105 64.233.176.147
+rDNS record for 64.233.176.99: yw-in-f99.1e100.net
+Nmap done: 1 IP address (1 host up) scanned in 0.17 seconds
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -n 192.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:50 ECT
+Nmap scan report for 192.168.1.7
+Host is up (0.068s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+3580/tcp open  nati-svrloc
+8080/tcp open  http-proxy
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 13.40 seconds
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -sT 192.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:50 ECT
+Nmap scan report for 192.168.1.7
+Host is up (0.011s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+3580/tcp open  nati-svrloc
+8080/tcp open  http-proxy
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 4.55 seconds
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmao[Kp -sS 10[K92.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:51 ECT
+Nmap scan report for 192.168.1.7
+Host is up (0.060s latency).
+Not shown: 998 filtered ports
+PORT     STATE SERVICE
+3580/tcp open  nati-svrloc
+8080/tcp open  http-proxy
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 9.90 seconds
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -sU 192.18[K68.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:52 ECT
+Nmap scan report for 192.168.1.7
+Host is up (0.029s latency).
+Not shown: 999 open|filtered ports
+PORT     STATE SERVICE
+5353/udp open  zeroconf
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 19.64 seconds
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -p[KPN [K[Km[Kn -p 445 -v -sI 10[K92.168.1.1[K7 192.168.1.11
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:54 ECT
+Initiating ARP Ping Scan at 20:54
+Scanning 192.168.1.11 [1 port]
+Completed ARP Ping Scan at 20:54, 0.08s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:54
+Completed Parallel DNS resolution of 1 host. at 20:54, 0.00s elapsed
+Initiating idle scan against 192.168.1.11 at 20:54
+Idle scan zombie 192.168.1.7 (192.168.1.7) port 80 cannot be used because it has not returned any of our probes -- perhaps it is down or firewalled.
+QUITTING!
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -Pn -p 445 -v -sI 192.168.1.7 192.168.1.11[K7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:55 ECT
+Initiating Parallel DNS resolution of 1 host. at 20:55
+Completed Parallel DNS resolution of 1 host. at 20:55, 0.00s elapsed
+Initiating idle scan against 192.168.1.17 at 20:55
+Skipping Idle Scan against 192.168.1.17 -- you can't idle scan your own machine (localhost).
+Nmap scan report for 192.168.1.17
+Host is up.
+PORT    STATE   SERVICE
+445/tcp unknown microsoft-ds
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.06 seconds
+           Raw packets sent: 0 (0B) | Rcvd: 0 (0B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -Pn -sA -[K-p 443-445,3389 -v 192.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:55 ECT
+Initiating ARP Ping Scan at 20:55
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 20:55, 0.14s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:55
+Completed Parallel DNS resolution of 1 host. at 20:55, 0.00s elapsed
+Initiating ACK Scan at 20:55
+Scanning 192.168.1.7 [4 ports]
+Completed ACK Scan at 20:55, 2.44s elapsed (4 total ports)
+Nmap scan report for 192.168.1.7
+Host is up (0.14s latency).
+PORT     STATE    SERVICE
+443/tcp  filtered https
+444/tcp  filtered snpp
+445/tcp  filtered microsoft-ds
+3389/tcp filtered ms-wbt-server
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.67 seconds
+           Raw packets sent: 9 (348B) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -sN -p 21-25 -v 192-[K.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:57 ECT
+Initiating ARP Ping Scan at 20:57
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 20:57, 0.03s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:57
+Completed Parallel DNS resolution of 1 host. at 20:57, 0.00s elapsed
+Initiating NULL Scan at 20:57
+Scanning 192.168.1.7 [5 ports]
+Completed NULL Scan at 20:57, 1.32s elapsed (5 total ports)
+Nmap scan report for 192.168.1.7
+Host is up (0.031s latency).
+PORT   STATE         SERVICE
+21/tcp open|filtered ftp
+22/tcp open|filtered ssh
+23/tcp open|filtered telnet
+24/tcp open|filtered priv-mail
+25/tcp open|filtered smtp
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.44 seconds
+           Raw packets sent: 11 (428B) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -sF -p 21-25 -v 192.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:57 ECT
+Initiating ARP Ping Scan at 20:57
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 20:57, 0.15s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:57
+Completed Parallel DNS resolution of 1 host. at 20:57, 0.00s elapsed
+Initiating FIN Scan at 20:57
+Scanning 192.168.1.7 [5 ports]
+Completed FIN Scan at 20:57, 2.50s elapsed (5 total ports)
+Nmap scan report for 192.168.1.7
+Host is up (0.15s latency).
+PORT   STATE         SERVICE
+21/tcp open|filtered ftp
+22/tcp open|filtered ssh
+23/tcp open|filtered telnet
+24/tcp open|filtered priv-mail
+25/tcp open|filtered smtp
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.75 seconds
+           Raw packets sent: 11 (428B) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -sX -p 21.[K-25 -v 192.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:58 ECT
+Initiating ARP Ping Scan at 20:58
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 20:58, 0.23s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:58
+Completed Parallel DNS resolution of 1 host. at 20:58, 0.00s elapsed
+Initiating XMAS Scan at 20:58
+Scanning 192.168.1.7 [5 ports]
+Completed XMAS Scan at 20:58, 1.28s elapsed (5 total ports)
+Nmap scan report for 192.168.1.7
+Host is up (0.027s latency).
+PORT   STATE         SERVICE
+21/tcp open|filtered ftp
+22/tcp open|filtered ssh
+23/tcp open|filtered telnet
+24/tcp open|filtered priv-mail
+25/tcp open|filtered smtp
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.60 seconds
+           Raw packets sent: 12 (456B) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# m[Knmap -sM -p 21-25 -v 192.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:58 ECT
+Initiating ARP Ping Scan at 20:58
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 20:58, 0.09s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:58
+Completed Parallel DNS resolution of 1 host. at 20:58, 0.00s elapsed
+Initiating Maimon Scan at 20:58
+Scanning 192.168.1.7 [5 ports]
+Completed Maimon Scan at 20:58, 1.91s elapsed (5 total ports)
+Nmap scan report for 192.168.1.7
+Host is up (0.090s latency).
+PORT   STATE         SERVICE
+21/tcp open|filtered ftp
+22/tcp open|filtered ssh
+23/tcp open|filtered telnet
+24/tcp open|filtered priv-mail
+25/tcp open|filtered smtp
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.10 seconds
+           Raw packets sent: 11 (428B) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -sW -p 21-25 -v 192-[K.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 20:59 ECT
+Initiating ARP Ping Scan at 20:59
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 20:59, 0.13s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 20:59
+Completed Parallel DNS resolution of 1 host. at 20:59, 0.00s elapsed
+Initiating Window Scan at 20:59
+Scanning 192.168.1.7 [5 ports]
+Completed Window Scan at 20:59, 2.31s elapsed (5 total ports)
+Nmap scan report for 192.168.1.7
+Host is up (0.13s latency).
+PORT   STATE    SERVICE
+21/tcp filtered ftp
+22/tcp filtered ssh
+23/tcp filtered telnet
+24/tcp filtered priv-mail
+25/tcp filtered smtp
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.55 seconds
+           Raw packets sent: 11 (428B) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -Pn -v -sO [K[Ko [K[KO -p1,2,3[K6,17,41 192.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 21:00 ECT
+Initiating ARP Ping Scan at 21:00
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 21:00, 0.07s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:00
+Completed Parallel DNS resolution of 1 host. at 21:00, 0.00s elapsed
+Initiating IPProto Scan at 21:00
+Scanning 192.168.1.7 [5 ports]
+Completed IPProto Scan at 21:00, 1.72s elapsed (5 total ports)
+Nmap scan report for 192.168.1.7
+Host is up (0.071s latency).
+PROTOCOL STATE         SERVICE
+1        open|filtered icmp
+2        open|filtered igmp
+6        open|filtered tcp
+17       open|filtered udp
+41       open|filtered ipv6
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.89 seconds
+           Raw packets sent: 11 (316B) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap s[K-sY -P[Kp 21-25 -v 192.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 21:00 ECT
+Initiating ARP Ping Scan at 21:00
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 21:00, 0.03s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:00
+Completed Parallel DNS resolution of 1 host. at 21:00, 0.00s elapsed
+Initiating SCTP INIT Scan at 21:00
+Scanning 192.168.1.7 [5 ports]
+Completed SCTP INIT Scan at 21:00, 1.29s elapsed (5 total ports)
+Nmap scan report for 192.168.1.7
+Host is up (0.028s latency).
+PORT    STATE    SERVICE
+21/sctp filtered ftp
+22/sctp filtered ssh
+23/sctp filtered unknown
+24/sctp filtered unknown
+25/sctp filtered unknown
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.42 seconds
+           Raw packets sent: 11 (548B) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -sZ p 21-25 -v 192-168-[K.1.7[1P168.1.7.168.1.7
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 21:01 ECT
+Failed to resolve "p".
+Failed to resolve "21-25".
+Initiating ARP Ping Scan at 21:01
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 21:01, 0.15s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:01
+Completed Parallel DNS resolution of 1 host. at 21:01, 0.00s elapsed
+Initiating SCTP COOKIE-ECHO Scan at 21:01
+Scanning 192.168.1.7 [52 ports]
+Completed SCTP COOKIE-ECHO Scan at 21:01, 10.30s elapsed (52 total ports)
+Nmap scan report for 192.168.1.7
+Host is up (0.15s latency).
+All 52 scanned ports on 192.168.1.7 are open|filtered
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 10.54 seconds
+           Raw packets sent: 105 (4.188KB) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# nmap -sZ p 21-25 -v 192.168.1.7[1@-
+
+Starting Nmap 6.47 ( http://nmap.org ) at 2016-12-20 21:01 ECT
+Initiating ARP Ping Scan at 21:01
+Scanning 192.168.1.7 [1 port]
+Completed ARP Ping Scan at 21:01, 0.16s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:01
+Completed Parallel DNS resolution of 1 host. at 21:01, 0.00s elapsed
+Initiating SCTP COOKIE-ECHO Scan at 21:01
+Scanning 192.168.1.7 [5 ports]
+Completed SCTP COOKIE-ECHO Scan at 21:01, 2.63s elapsed (5 total ports)
+Nmap scan report for 192.168.1.7
+Host is up (0.16s latency).
+PORT    STATE         SERVICE
+21/sctp open|filtered ftp
+22/sctp open|filtered ssh
+23/sctp open|filtered unknown
+24/sctp open|filtered unknown
+25/sctp open|filtered unknown
+MAC Address: 70:77:81:83:47:9F (Unknown)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.90 seconds
+           Raw packets sent: 11 (428B) | Rcvd: 1 (28B)
+]0;root@kali: ~[01;31mroot@kali[00m:[01;34m~[00m# exit
+Script done on mar 20 dic 2016 21:02:04 ECT
